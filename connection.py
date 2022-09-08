@@ -11,5 +11,7 @@ class Bot:
     ib = None
     def __init__(self):
         ib = IBApi()
+        ib.connect("127.0.0.1", 7496,1)
+        ib.run()
 
 bot = Bot()
